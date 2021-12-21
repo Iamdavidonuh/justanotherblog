@@ -1,0 +1,77 @@
+baseURL: "https://examplesite.com/"
+title: Logo
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: David Onuh
+  description: "My blog where I write about all the things i'm currently learning"
+  keywords: [Blog, Portfolio, PaperMod, Golang, Python, Software, Docker, Kubernetes]
+  author: David Onuh
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto 
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Hi there \U0001F44B"
+    subtitle: "Welcome to my blog"
+    imageUrl: "https://avatars.githubusercontent.com/u/37768509?v=4"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Blog
+        url: blog
+
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/david-onuh/"
+    # - name: twitter
+    #   url: "#"
+
+
+
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: Blog
+      name: Blog
+      url: /blog/
+      weight: 20
