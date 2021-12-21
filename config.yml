@@ -1,5 +1,5 @@
 baseURL: "https://examplesite.com/"
-title: Logo
+title: David Onuh
 paginate: 5
 theme: PaperMod
 
@@ -24,16 +24,17 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto 
   ShowReadingTime: true
-  ShowShareButtons: true
+  # ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  disableScrollToTop: false
+  ShowCodeCopyButtons: true
+  # disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true
+  tocopen: true
+  
 
   # profile-mode
   profileMode:
@@ -55,12 +56,14 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: github
-      url: "https://github.com/"
     - name: linkedin
       url: "https://www.linkedin.com/in/david-onuh/"
-    # - name: twitter
-    #   url: "#"
+    - name: email
+      url: "mailto:davidonuh1@gmail.com"
+    - name: github
+      url: "https://github.com/iamdavidonuh"
+    - name: rss
+      url: "/index.xml"
 
 
 
