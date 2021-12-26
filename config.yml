@@ -14,6 +14,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: David Onuh
@@ -34,6 +40,16 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+
+# searching
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      keys: ["title", "permalink", "summary", "content"]
   
 
   # profile-mode
@@ -48,6 +64,8 @@ params:
     buttons:
       - name: Blog
         url: blog
+      - name: Search
+        url: search
 
 
   # home-info mode
@@ -79,3 +97,8 @@ menu:
       name: Blog
       url: /blog
       weight: 20
+
+    - identifier: Search
+      name: Search
+      url: /search
+      weight: 30
