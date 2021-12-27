@@ -41,6 +41,9 @@ params:
   showtoc: true
   tocopen: true
 
+  assets:
+    disableFingerprinting: true
+
 # searching
   fuseOpts:
       isCaseSensitive: false
