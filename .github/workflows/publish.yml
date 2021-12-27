@@ -33,5 +33,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.GH_PRIVATE_KEY }}
-          external_repository: <Iamdavidonuh/justanotherblog>
+          external_repository: Iamdavidonuh/justanotherblog
           publish_dir: ./public
