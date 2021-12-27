@@ -15,16 +15,16 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-      
       - name: Checkout to Custom Branch
         run: |
           cd themes/PaperMod
           git checkout toc-on-the-side
-        # cd ../../
+          cd ../../
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
 
       - name: Build
         run: hugo --gc --verbose --minify
@@ -33,5 +33,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.GH_PRIVATE_KEY }}
-          external_repository: Iamdavidonuh/justanotherblog
+          # external_repository: Iamdavidonuh/justanotherblog
           publish_dir: ./public
