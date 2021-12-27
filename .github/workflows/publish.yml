@@ -19,6 +19,12 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+      
+      - name: Checkout to Custom Branch
+        run: |
+          cd themes/PaperMod
+          git checkout toc-on-the-side
+          cd ../../
 
       - name: Build
         run: hugo --minify
