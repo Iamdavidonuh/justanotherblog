@@ -24,9 +24,9 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: David Onuh
   description: "My blog where I write about all the things i'm currently learning"
-  keywords: [Blog, Portfolio, PaperMod, Golang, Python, Software, Docker, Kubernetes]
+  keywords: [Blog, Portfolio, PaperMod, Golang, Python, Software, Docker, Kubernetes, How to, building, coding, bugs, software development, engineering]
   author: David Onuh
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto 
   ShowReadingTime: true
@@ -58,9 +58,9 @@ params:
     title: "Hi there \U0001F44B"
     subtitle: "Welcome to my blog"
     imageUrl: "https://avatars.githubusercontent.com/u/37768509?v=4"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    imageWidth: 300
+    imageHeight: 300
+    imageTitle: Call me Greatness
     buttons:
       - name: Blog
         url: blog
