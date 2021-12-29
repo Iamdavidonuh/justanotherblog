@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://iamdavidonuh.github.io/justanotherblog/sitemap.xml
+Sitemap: https://iamdavidonuh.github.io/sitemap.xml
